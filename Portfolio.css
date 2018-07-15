@@ -1,0 +1,41 @@
+.row{   
+    display:flex;
+    justify-content:space-around;
+    background-color:black;
+    color:white;
+    font-size:20px;
+}
+.headshot{
+    width:20%;
+    border:solid black 7px;
+    margin: 5px;
+   
+}
+.mid{
+    background-color:white;
+    color:black;
+    align-items:center;
+    font-size:50px;
+    margin-top:5px;
+    margin-bottom:5px;
+    font-family: 'Quicksand', sans-serif;
+}
+.aboutme{
+    border:1px solid black; 
+   
+    display:flex;
+    justify-content:center;
+}
+.contact{
+    display:block;
+    justify-content: flex-start;    
+}
+a{
+    margin-top:20px;
+    display:flex;
+    justify-content:space-around;
+    background-color:black;
+    color:white;
+    font-size:20px;
+}
+
