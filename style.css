@@ -13,7 +13,8 @@ body {
     background-size: cover;
   }
 #name{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Manjari', sans-serif;
+    font-size: 50px;
 }
 #nav{   
     display:flex;
@@ -142,16 +143,35 @@ body {
     padding:10px;
     flex-flow: column;
     display:flex;
+    margin:10px;
 }
 .project h1{
     color:white;
     font-family: 'Montserrat', sans-serif;
+/*scrollbar*/
+}
+::-webkit-scrollbar{
+    width:17px;
+    
+}
+::-webkit-scrollbar-track{
+    background-color:rgba(39, 189, 235, 0.808);
+    padding:1px;
+}
+::-webkit-scrollbar-thumb{
+    background-color:  #008080cb;
+    border:black 2px solid;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color:  #0a7474e7;
 }
 /* portfolio page */
 #projects{
     display: flex;
     width:85%;
-    height:85%;
+    /* height:85%; */
+    padding:30px;
     align-items: center;
     justify-content: space-around;
     background: #008080e8;
