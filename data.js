@@ -27,9 +27,19 @@ let slots = {
             link:"https://skymazter.github.io/giphy/"
         },
         {
-            name:"Weather Teller",
+            name:"My Weather Teller",
             pic:"Screenshot (1).png",
             link:"https://skymazter.github.io/weather-endgame/"
+        },
+        {
+            name:"Chemistry Guru",
+            pic:"Screenshot (16).png",
+            link:""
+        },
+        {
+            name:"",
+            pic:"",
+            link:""
         },
         {
             name:"",

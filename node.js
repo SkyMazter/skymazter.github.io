@@ -2,13 +2,14 @@ let datalength = slots.projects.length;
 slots.projects.name;
 console.log(datalength);
 function pasteProjects(){
-    for( i = 0; i < datalength; i++){
+    for( i = 0; i < datalength; i+=1){
         $("#projects").append("<div class = 'project'>"+
-        "<h1>"+slots.projects[i].name+"</h1>"+
         "<img src='"+slots.projects[i].pic+"'>"+
-        "<a href='"+slots.projects[i].link+"'>Check It Out!</a>"+
+        "<div class = 'side_info'>"+
+        "<h1>"+slots.projects[i].name+"</h1>"+
+        "<a href='"+slots.projects[i].link+"'>Project Availabe Here</a>"+
+        "</div>"+
         "</div>");
-        
     };
 };
 pasteProjects();
