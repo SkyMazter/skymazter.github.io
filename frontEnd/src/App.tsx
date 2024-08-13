@@ -22,7 +22,8 @@ const App = () => {
           alignItems: "center",
         }}
       >
-        <Container className="">
+        <Container>
+          
           <Row>
             <Col className="d-flex justify-content-center">
               <h1 className="fw-bolder" style={{
@@ -30,7 +31,7 @@ const App = () => {
                 fontWeight: "200",
                 fontStyle: "normal",
                 fontSize: "75px"
-              }}>Oscar .K. Comunidad</h1>
+              }}>Oscar K. Comunidad</h1>
             </Col>
           </Row>
           <Row>

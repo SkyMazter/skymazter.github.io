@@ -8,7 +8,6 @@ const P5Background = () => {
     const sketch = (p: p5) => {
       let circles: Circle[] = [];
       let colors: string[] = ["red", "green", "blue"];
-      // let color = p.random(colors);
       class Circle {
         x: number;
         y: number;
