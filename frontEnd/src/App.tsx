@@ -26,12 +26,7 @@ const App = () => {
           
           <Row>
             <Col className="d-flex justify-content-center">
-              <h1 className="fw-bolder" style={{
-                fontFamily: "Karla, sans-serif",
-                fontWeight: "200",
-                fontStyle: "normal",
-                fontSize: "75px"
-              }}>Oscar K. Comunidad</h1>
+              <h1 className="fw-bolder typewriter" >Oscar K. Comunidad</h1>
             </Col>
           </Row>
           <Row>
