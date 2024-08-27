@@ -1,10 +1,7 @@
-
 const Portfolio = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  return <div>
+    
+  </div>;
+};
 
-export default Portfolio
+export default Portfolio;
