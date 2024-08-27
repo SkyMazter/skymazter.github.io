@@ -1,8 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 /* Base */
 
-
-
 .typewriter {
   position: relative;
   padding: 1px;
@@ -19,12 +17,14 @@
     blinkTextCursor 500ms infinite;
 }
 
-@media (max-width: 767.98px) { 
-  .typewriter{
+@media (max-width: 767.98px) {
+  .typewriter {
     width: 100%;
-    font-size: 50px;
-    white-space: wrap;
+    font-size: 30px;
+
   }
+
+
 }
 
 @keyframes typewriter {
@@ -32,8 +32,9 @@
     width: 0;
   }
   to {
-    width: 63%;
+    width: 100%;
   }
+
 }
 @keyframes blinkTextCursor {
   from {
@@ -44,9 +45,3 @@
   }
 }
 
-/* style={{
-  fontFamily: "Karla, sans-serif",
-  fontWeight: "200",
-  fontStyle: "normal",
-  fontSize: "75px"
-}} */

@@ -23,11 +23,14 @@ const App = () => {
         }}
       >
         <Container>
+          <Row className="justify-content-lg-center">
           
-          <Row>
-            <Col className="d-flex justify-content-center">
-              <h1 className="fw-bolder typewriter" >Oscar K. Comunidad</h1>
+            <Col className="d-flex justify-content-center" lg={8}>
+              <h1 className="fw-bolder typewriter text-center">
+                Oscar K. Comunidad
+              </h1>
             </Col>
+
           </Row>
           <Row>
             <Col className="d-flex justify-content-center">
@@ -49,9 +52,7 @@ const App = () => {
               <Button variant="outline-primary">About Me</Button>
             </Col>
             <Col className="d-flex justify-content-center">
-              <Button variant="outline-success" >
-                Contact Me
-              </Button>
+              <Button variant="outline-success">Contact Me</Button>
             </Col>
           </Row>
         </Container>
