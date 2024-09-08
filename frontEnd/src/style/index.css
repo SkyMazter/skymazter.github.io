@@ -22,6 +22,10 @@
     width: 100%;
     font-size: 30px;
   }
+
+  .subheading {
+    font-size: 12px;
+  }
 }
 
 @keyframes typewriter {
@@ -39,4 +43,12 @@
   to {
     border-right-color: transparent;
   }
+}
+
+.home-header{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }

@@ -1,8 +1,8 @@
-import { useRef, useEffect } from "react";
+import { useEffect, useRef } from "react";
 import p5 from "p5";
 
 const P5Background = () => {
-  const sketchRef = useRef<HTMLDivElement>(null);
+  const reference = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const sketch = (p: p5) => {
@@ -47,14 +47,14 @@ const P5Background = () => {
           } else {
             p.fill(120, 255, 68, 150);
           }
-          
+
           p.ellipse(this.x, this.y, this.diameter);
         }
       }
 
       p.setup = () => {
         const canvas = p.createCanvas(p.windowWidth, p.windowHeight);
-        canvas.parent(sketchRef.current!);
+        canvas.parent(reference.current!);
         for (let i = 0; i < 100; i++) {
           circles.push(new Circle());
         }
@@ -82,7 +82,7 @@ const P5Background = () => {
 
   return (
     <div
-      ref={sketchRef}
+      ref={reference}
       style={{
         position: "absolute",
         top: 0,
