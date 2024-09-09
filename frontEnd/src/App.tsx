@@ -1,6 +1,10 @@
-import { Button, Col, Container, Row } from "react-bootstrap";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Button from "react-bootstrap/Button";
 import P5Background from "./components/P5Background";
 import { Link } from "react-router-dom";
+import Highlight from "./components/Highlight";
 
 const App = () => {
   return (
@@ -21,17 +25,17 @@ const App = () => {
           height: "100%",
         }}
       >
-        <Container className="home-header">
+        <Container className="home-header ">
           <Row className="justify-content-lg-center">
             <Col className="d-flex justify-content-center" lg={8}>
-              <h1 className="fw-bolder typewriter text-center">
+              <h1 className="fw-bolder typewriter karla text-center">
                 Oscar K. Comunidad
               </h1>
             </Col>
           </Row>
           <Row>
             <Col className="d-flex justify-content-center">
-              <p className="subheading">
+              <p className="subheading karla">
                 Software Developer | Photographer | Digital Justice Advocate
               </p>
             </Col>
@@ -56,6 +60,19 @@ const App = () => {
               </Button>
             </Col>
           </Row>
+        </Container>
+
+        <Container className="">
+          <Row>
+            <Col>
+              <h2 className=" m-2 karla border-2 border-dark border-bottom">
+                Highlighted Projects
+              </h2>
+            </Col>
+          </Row>
+          <Highlight tags={['React', 'Typescript', 'Web']}/>
+          <Highlight />
+          <Highlight />
         </Container>
       </div>
     </div>

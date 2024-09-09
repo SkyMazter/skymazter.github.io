@@ -1,13 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
-/* Base */
-
 .typewriter {
   position: relative;
   padding: 1px;
-  /* color: hsl(0, 0%, 68%); */
   width: fit-content;
   font-weight: bold 200 !important;
-  font-family: "Karla", sans-serif !important;
+  
   font-size: 75px;
   letter-spacing: 3px !important;
   overflow: hidden;
@@ -51,4 +47,18 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+.home-projects{
+  background-color: rgba(255, 227, 227, 0.829);
+}
+
+.karla{
+  font-family: "Karla", sans-serif !important;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
