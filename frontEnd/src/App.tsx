@@ -64,8 +64,8 @@ const App = () => {
 
         <Container className="">
           <Row>
-            <Col>
-              <h2 className=" m-2 karla border-2 border-dark border-bottom">
+            <Col className="border-2 border-dark border-bottom">
+              <h2 className="typewriter karla ">
                 Highlighted Projects
               </h2>
             </Col>
