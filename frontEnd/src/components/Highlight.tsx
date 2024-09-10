@@ -15,7 +15,7 @@ const Highlight = ({ title, description, siteLink, tags }: Props) => {
   const placeholderText: String =
     "Lorem ipsum odor amet, consectetuer adipiscing elit. Mollis nisi varius enim hendrerit adipiscing. Tortor mus diam; class class at sed. Senectus euismod imperdiet eros facilisis non augue? Lacus vitae bibendum libero faucibus est. Ornare himenaeos sapien duis sodales commodo proin egestas. Feugiat augue mattis erat; adipiscing ante porttitor netus. Placerat proin aliquam enim tellus tempus quis velit ultrices. Efficitur quam maximus pulvinar quam molestie?";
   return (
-    <Row className="my-2 ">
+    <Row className="my-3 ">
       <Col>
         <Card className="home-projects">
           <Card.Header className="karla">
