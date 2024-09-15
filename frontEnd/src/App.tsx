@@ -5,6 +5,7 @@ import Button from "react-bootstrap/Button";
 import P5Background from "./components/P5Background";
 import { Link } from "react-router-dom";
 import Highlight from "./components/Highlight";
+import AboutMe from "./components/AboutMe";
 
 const App = () => {
   return (
@@ -36,7 +37,7 @@ const App = () => {
           <Row>
             <Col className="d-flex justify-content-center">
               <p className="subheading karla">
-                Software Developer | Photographer | Digital Justice Advocate
+                Software Developer | Facilitator | Digital Justice Advocate
               </p>
             </Col>
           </Row>
@@ -62,17 +63,20 @@ const App = () => {
           </Row>
         </Container>
 
+        <AboutMe />
+        
         <Container className="">
           <Row>
             <Col className="border-2 border-dark border-bottom">
-              <h2 className="typewriter karla ">
-                Highlighted Projects
-              </h2>
+              <h2 className="typewriter karla ">Highlighted Projects</h2>
             </Col>
           </Row>
-          <Highlight tags={['React', 'Typescript', 'Web']}/>
+          <Highlight tags={["React", "Typescript", "Web"]} />
           <Highlight />
           <Highlight />
+          <Row className="centerThis">
+            <Col xs={3} className="seperator"></Col>
+          </Row>
         </Container>
       </div>
     </div>
