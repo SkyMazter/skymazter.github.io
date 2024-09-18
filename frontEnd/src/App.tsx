@@ -6,8 +6,16 @@ import P5Background from "./components/P5Background";
 import { Link } from "react-router-dom";
 import Highlight from "./components/Highlight";
 import AboutMe from "./components/AboutMe";
+import { useRef } from "react";
 
 const App = () => {
+  const aboutMeRef = useRef<HTMLDivElement | null>(null);
+
+  const scrollToSection = (section: string) => {
+    if (section == "about") {
+      aboutMeRef.current?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div
       style={{
@@ -51,7 +59,13 @@ const App = () => {
               </Link>
             </Col>
             <Col className="d-flex justify-content-center">
-              <Button variant="outline-primary" className="subheading">
+              <Button
+                variant="outline-primary"
+                className="subheading"
+                onClick={() => {
+                  scrollToSection("about");
+                }}
+              >
                 About Me
               </Button>
             </Col>
@@ -63,8 +77,8 @@ const App = () => {
           </Row>
         </Container>
 
-        <AboutMe />
-        
+        <AboutMe aboutref={aboutMeRef} />
+
         <Container className="">
           <Row>
             <Col className="border-2 border-dark border-bottom">

@@ -4,9 +4,13 @@ import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import { Link } from "react-router-dom";
 
-const AboutMe = () => {
+interface Props {
+  aboutref: React.RefObject<HTMLDivElement>;
+}
+
+const AboutMe = ({aboutref}: Props) => {
   return (
-    <Container className="py-5">
+    <Container className="py-5" ref={aboutref}>
       <Row>
         <Col xs={12} className="border-2 border-dark border-bottom">
           <h2 className="typewriter karla ">About Me</h2>
@@ -16,7 +20,7 @@ const AboutMe = () => {
         <Col xs={12} md={4}>
           <Image></Image>
         </Col>
-        <Col xs={12} md={8} >
+        <Col xs={12} md={8}>
           <h4 className="karla">Fully Stacked</h4>
           <p>
             First and foremost I am a Full Stack Software Engineer, Proficient
@@ -53,8 +57,7 @@ const AboutMe = () => {
         </Col>
       </Row>
       <Row className="centerThis">
-        <Col xs={3} className="seperator">
-        </Col>
+        <Col xs={3} className="seperator"></Col>
       </Row>
     </Container>
   );
