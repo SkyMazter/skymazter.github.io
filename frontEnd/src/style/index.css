@@ -81,3 +81,13 @@
     margin-top: 12%;
     margin-bottom: 12%;
 }
+.logo {
+    height: 50%;
+    width: 50%;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    height: 55%;
+    width: 55%;
+}
