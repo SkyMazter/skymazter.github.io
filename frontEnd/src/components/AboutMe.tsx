@@ -1,14 +1,21 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Image from "react-bootstrap/Image";
+// import Image from "react-bootstrap/Image";
 import { Link } from "react-router-dom";
 
 interface Props {
   aboutref: React.RefObject<HTMLDivElement>;
 }
 
-const AboutMe = ({aboutref}: Props) => {
+const AboutMe = ({ aboutref }: Props) => {
+  const styleObj: React.CSSProperties = {
+    backgroundColor: "rgba(250, 253, 219, 0.75)",
+    border: "solid rgb(250, 253, 219) 2px",
+    borderRadius: "0.5em",
+    padding: "10px",
+  };
+
   return (
     <Container className="py-5" ref={aboutref}>
       <Row>
@@ -17,10 +24,10 @@ const AboutMe = ({aboutref}: Props) => {
         </Col>
       </Row>
       <Row className="my-3">
-        <Col xs={12} md={4}>
+        {/* <Col xs={12} md={4}>
           <Image></Image>
-        </Col>
-        <Col xs={12} md={8}>
+        </Col> */}
+        <Col xs={12} md={12} style={styleObj}>
           <h4 className="karla">Fully Stacked</h4>
           <p>
             First and foremost I am a Full Stack Software Engineer, Proficient
@@ -45,14 +52,15 @@ const AboutMe = ({aboutref}: Props) => {
             For the better part of 4 years, I have been an advocate for digital
             equity in underserved communities within the New York City Area.
             I've been involved with{" "}
-            <Link to={"https://www.communitytechny.org/"}>CTNY</Link> and El
-            Puente, in the creation of their Community Tech Lab and a
-            facilitator of said lab. Coordinating and facilitating workshops,
-            community events and special projects taking place in our community
-            lab. Developing curriculum revolving around Web Development,
-            Wireless Technologies and Computer Networking meant to educate
-            participants on both technology and how it relates to community
-            organization, self governance, and resilience.
+            <Link to={"https://www.communitytechny.org/"}>CTNY</Link> and{" "}
+            <Link to={"https://www.elpuente.org"}>El Puente</Link>, in the
+            creation of their Community Tech Lab and a facilitator of said lab.
+            Coordinating and facilitating workshops, community events and
+            special projects taking place in our community lab. Developing
+            curriculum revolving around Web Development, Wireless Technologies
+            and Computer Networking meant to educate participants on both
+            technology and how it relates to community organization, self
+            governance, and resilience.
           </p>
         </Col>
       </Row>
