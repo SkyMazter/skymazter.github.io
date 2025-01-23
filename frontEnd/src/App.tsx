@@ -3,7 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import P5Background from "./components/P5Background";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Highlight from "./components/Highlight";
 import AboutMe from "./components/AboutMe";
 import { useRef } from "react";
@@ -12,14 +12,17 @@ import ContactMe from "./components/ContactMe";
 const App = () => {
   const aboutMeRef = useRef<HTMLDivElement | null>(null);
   const contactRef = useRef<HTMLDivElement | null>(null);
+  const portfolioRef = useRef<HTMLDivElement | null>(null);
 
   const scrollToSection = (section: string) => {
     if (section == "about") {
       aboutMeRef.current?.scrollIntoView({ behavior: "smooth" });
     }
-
     if (section == "contact") {
       contactRef.current?.scrollIntoView({ behavior: "smooth" });
+    }
+    if (section == "portfolio") {
+      portfolioRef.current?.scrollIntoView({ behavior: "smooth" });
     }
   };
   return (
@@ -58,11 +61,20 @@ const App = () => {
 
           <Row>
             <Col className="d-flex justify-content-center">
-              <Link to={"/portfolio"}>
+              {/* <Link to={"/portfolio"}>
                 <Button variant="outline-danger" className="subheading">
                   Portfolio
                 </Button>
-              </Link>
+              </Link> */}
+              <Button
+                variant="outline-danger"
+                className="subheading"
+                onClick={() => {
+                  scrollToSection("portfolio");
+                }}
+              >
+                Portfolio
+              </Button>
             </Col>
             <Col className="d-flex justify-content-center">
               <Button
@@ -91,7 +103,7 @@ const App = () => {
 
         <AboutMe aboutref={aboutMeRef} />
 
-        <Container className="">
+        <Container ref={portfolioRef}>
           <Row>
             <Col className="border-2 border-dark border-bottom">
               <h2 className="typewriter karla">Highlighted Projects</h2>
