@@ -114,7 +114,7 @@ const App = () => {
               title={"Community Tech Lab Website"}
               description="This is a website I built to showcase the work El Puente and CTNY has done when it comes to community technology and digital equity. Showcasing version history of Portable Network Kits, Our trained stewards, and examples of community owned networks throughout the United States."
               githubLink="https://github.com/Community-Tech-Lab/CTLab_Website"
-              siteLink="https://community-tech-lab.github.io/CTLab_Website/"
+              siteLink="https://www.communitytechlab.org"
               tags={["React", "Typescript", "Web"]}
             />
             <Highlight

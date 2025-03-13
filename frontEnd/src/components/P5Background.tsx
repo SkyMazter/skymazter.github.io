@@ -6,8 +6,8 @@ const P5Background = () => {
 
   useEffect(() => {
     const sketch = (p: p5) => {
-      let circles: Circle[] = [];
-      let colors: string[] = ["red", "green", "blue"];
+      const circles: Circle[] = [];
+      const colors: string[] = ["red", "green", "blue"];
       class Circle {
         x: number;
         y: number;
@@ -62,7 +62,7 @@ const P5Background = () => {
 
       p.draw = () => {
         p.background(500, 500, 500);
-        for (let circle of circles) {
+        for (const circle of circles) {
           circle.move();
           circle.display();
         }
