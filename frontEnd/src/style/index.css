@@ -89,6 +89,5 @@
 }
 
 .logo:hover {
-    height: 4em;
-    width: 4em;
+    color: lightblue;
 }

@@ -17,19 +17,7 @@ const ContactMe = ({ contactRef }: Props) => {
         </Col>
       </Row>
       <Row>
-        {/* <Col className="centerThis py-3" xs={3} lg={3}>
-          <BsGithub className="logo" />
-        </Col>
-        <Col className="centerThis py-3" xs={3} lg={3}>
-          <BsLinkedin className="logo" />
-        </Col>
-        <Col className="centerThis py-3" xs={3} lg={3}>
-          <BsInstagram className="logo" />
-        </Col>
-        <Col className="centerThis py-3" xs={3} lg={3}>
-          <BsYoutube className="logo" />
-        </Col> */}
-        <Col className="d-flex align-items-center justify-content-between p-3 my-3">
+        <Col className="d-flex align-items-center justify-content-around p-3 my-3">
           <Link to={"https://github.com/SkyMazter"}>
             <BsGithub className="logo" />
           </Link>
