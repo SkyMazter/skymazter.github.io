@@ -1,7 +1,6 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-// import Image from "react-bootstrap/Image";
 import { Link } from "react-router-dom";
 
 interface Props {
@@ -24,11 +23,8 @@ const AboutMe = ({ aboutref }: Props) => {
         </Col>
       </Row>
       <Row className="my-3">
-        {/* <Col xs={12} md={4}>
-          <Image></Image>
-        </Col> */}
         <Col xs={12} md={12} style={styleObj}>
-          <h4 className="karla">Fully Stacked</h4>
+          <h4 className="karla">ReadMe.md</h4>
           <p>
             First and foremost I am a Full Stack Software Engineer, Proficient
             in C++, JavaScript/Typescript and Swift/UIKit. I have been coding

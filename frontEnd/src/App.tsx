@@ -3,7 +3,6 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import P5Background from "./components/P5Background";
-// import { Link } from "react-router-dom";
 import Highlight from "./components/Highlight";
 import AboutMe from "./components/AboutMe";
 import { useRef } from "react";
@@ -61,11 +60,6 @@ const App = () => {
 
           <Row>
             <Col className="d-flex justify-content-center">
-              {/* <Link to={"/portfolio"}>
-                <Button variant="outline-danger" className="subheading">
-                  Portfolio
-                </Button>
-              </Link> */}
               <Button
                 variant="outline-danger"
                 className="subheading"
@@ -128,6 +122,12 @@ const App = () => {
               description="The PNK server image sets up a local web server with a chat service, file sharing system, and document editor. Once configured, the system operates independently, facilitating seamless communication and collaboration within a self-contained network."
               githubLink="https://github.com/Community-Tech-Lab/PNK-Software"
               tags={["Linux", "Shell", "Raspberry Pi"]}
+            />
+            <Highlight
+              title={"Seen_It"}
+              description="This is a application made for the raspberry pi to serve as an archiving app. Allowing users to create accounts, upload, and download files. It also provides a user-friendly interface for navigating user submitted content. This application is meant to serve on a private local network. This application was designed was designed with the Portable Network Kit server."
+              githubLink="https://github.com/SkyMazter/Seen_It"
+              tags={["React.js", "Raspberry Pi", "Typescript"]}
             />
           </Row>
           <Row className="centerThis">
