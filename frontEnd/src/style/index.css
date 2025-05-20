@@ -1,93 +1,97 @@
 .typewriter {
-    position: relative;
-    padding: 1px;
-    width: fit-content;
-    font-weight: bold 200 !important;
+  position: relative;
+  padding: 1px;
+  width: fit-content;
+  font-weight: bold 200 !important;
 
-    font-size: 75px;
-    letter-spacing: 3px !important;
-    overflow: hidden;
-    border-right: 2px solid hsl(0, 0%, 0%);
-    white-space: nowrap;
-    animation:
-        typewriter 4s steps(44) 1s 1 normal both,
-        blinkTextCursor 500ms infinite;
+  font-size: 75px;
+  letter-spacing: 3px !important;
+  overflow: hidden;
+  border-right: 2px solid hsl(0, 0%, 0%);
+  white-space: nowrap;
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms infinite;
+}
+
+.looping-type {
+  animation: typewriter 4s steps(44) 1s infinite alternate both,
+    blinkTextCursor 500ms infinite;
 }
 
 @media (max-width: 767.98px) {
-    .typewriter {
-        width: 100%;
-        font-size: 30px;
-    }
+  .typewriter {
+    width: 100%;
+    font-size: 30px;
+  }
 
-    .subheading {
-        font-size: 12px;
-    }
+  .subheading {
+    font-size: 12px;
+  }
 }
 
 @keyframes typewriter {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 @keyframes blinkTextCursor {
-    from {
-        border-right-color: hsl(0, 0%, 0%);
-    }
-    to {
-        border-right-color: transparent;
-    }
+  from {
+    border-right-color: hsl(0, 0%, 0%);
+  }
+  to {
+    border-right-color: transparent;
+  }
 }
 
 .home-header {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .home-projects {
-    background-color: rgba(148, 246, 205, 0.75);
-    transition: 0.3s;
+  background-color: rgba(148, 246, 205, 0.75);
+  transition: 0.3s;
 }
 
 .home-projects:hover {
-    box-shadow: 5px 3px 3px lightgray;
+  box-shadow: 5px 3px 3px lightgray;
 }
 
 .karla {
-    font-family: "Karla", sans-serif !important;
-    font-optical-sizing: auto;
-    font-style: normal;
+  font-family: "Karla", sans-serif !important;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 .roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .centerThis {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .seperator {
-    background-color: black;
-    height: 4px;
-    margin-top: 12%;
-    margin-bottom: 12%;
+  background-color: black;
+  height: 4px;
+  margin-top: 12%;
+  margin-bottom: 12%;
 }
 .logo {
-    height: 3em;
-    width: 3em;
-    color: black;
-    transition: 0.3s;
+  height: 3em;
+  width: 3em;
+  color: black;
+  transition: 0.3s;
 }
 
 .logo:hover {
-    color: lightblue;
+  color: lightblue;
 }

@@ -7,8 +7,10 @@ import Highlight from "./components/Highlight";
 import AboutMe from "./components/AboutMe";
 import { useRef } from "react";
 import ContactMe from "./components/ContactMe";
+import { useNavigate } from "react-router-dom";
 
 const App = () => {
+  const navigate = useNavigate();
   const aboutMeRef = useRef<HTMLDivElement | null>(null);
   const contactRef = useRef<HTMLDivElement | null>(null);
   const portfolioRef = useRef<HTMLDivElement | null>(null);
@@ -129,6 +131,13 @@ const App = () => {
               githubLink="https://github.com/SkyMazter/Seen_It"
               tags={["React.js", "Raspberry Pi", "Typescript"]}
             />
+          </Row>
+          <Row className="centerThis">
+            <Col xs={4} className="centerThis">
+              <Button variant="success" onClick={() => navigate("/portfolio")}>
+                View All
+              </Button>
+            </Col>
           </Row>
           <Row className="centerThis">
             <Col xs={3} className="seperator"></Col>

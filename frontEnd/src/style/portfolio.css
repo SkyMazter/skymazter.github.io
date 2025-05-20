@@ -1,0 +1,47 @@
+.browser-nav {
+  background-color: rgb(0, 208, 255);
+  color: rgb(224, 255, 233);
+}
+.browser-tab {
+  background-color: rgb(111, 229, 255);
+  margin-top: 6px;
+  margin-bottom: 0;
+  margin-left: 6px;
+  margin-right: 0;
+}
+
+.browser-tab p {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.active {
+  color: black;
+  background-color: white;
+  border-top: black 0.3px solid;
+  border-left: black 0.3px solid;
+  border-right: black 0.3px solid;
+}
+
+.return-bttn {
+  height: 22px;
+  width: 22px;
+}
+
+.inactive-bttn {
+  display: block;
+  color: lightgray;
+}
+
+@media (max-width: 768px) {
+  .inactive-bttn {
+    margin-left: 3%;
+  }
+  .browser-tab {
+    margin-top: 2%;
+  }
+  .browser-tab p {
+    font-size: 0.8rem;
+  }
+}
