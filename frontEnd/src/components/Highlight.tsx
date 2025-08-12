@@ -1,9 +1,7 @@
-import Col from "react-bootstrap/Col";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
-import Badge from "react-bootstrap/Badge";
 import { Link } from "react-router-dom";
-import { BsGithub } from "react-icons/bs";
+import GHLogo from "./Icons/GHLogo";
+import placeholder from "../assets/Placeholder.png";
+import LinkIcon from "./Icons/LinkIcon";
 
 interface Props {
   title?: string | null;
@@ -11,6 +9,7 @@ interface Props {
   siteLink?: string;
   tags?: string[];
   githubLink?: string;
+  imgLink?: string;
 }
 
 const Highlight = ({
@@ -19,55 +18,56 @@ const Highlight = ({
   siteLink,
   tags,
   githubLink,
+  imgLink,
 }: Props) => {
   const placeholderText: string =
     "Lorem ipsum odor amet, consectetuer adipiscing elit. Mollis nisi varius enim hendrerit adipiscing. Tortor mus diam; class class at sed. Senectus euismod imperdiet eros facilisis non augue? Lacus vitae bibendum libero faucibus est.";
   return (
-    <Col className="my-3" xs={12} md={6} lg={4}>
-      <Card className="home-projects h-100">
-        <Card.Header className="karla">
-          <h5>{title ?? "Project Title"}</h5>
-        </Card.Header>
-        <Card.Body>
-          <Card.Text> {description ?? placeholderText} </Card.Text>
+    <div className="my-3">
+      <div className="">
+        <img className="highlight-img" src={imgLink ?? placeholder} />
 
-          {githubLink ? (
-            <Link to={githubLink ?? "https://github.com/SkyMazter"}>
-              <Button variant="outline-success me-2">
-                Git Repo <BsGithub />
-              </Button>
-            </Link>
-          ) : (
-            <></>
-          )}
-
+        {tags ? (
+          <div className="d-flex align-items-center py-3">
+            <p className="m-0 me-1 text-center">Tags:</p>
+            {tags?.length ? (
+              tags.map((tag, index) => (
+                <span className="me-1" key={index}>
+                  {tag}
+                </span>
+              ))
+            ) : (
+              <></>
+            )}
+          </div>
+        ) : (
+          <></>
+        )}
+        <img></img>
+        <header>
+          <h5 style={{ textDecoration: "underline" }}>
+            {title ?? "Project Title"}
+          </h5>
+        </header>
+        <article className="highlight-text">
+          <section> {description ?? placeholderText} </section>
+        </article>
+        <footer className="highlight-footer">
           {siteLink ? (
-            <Link to={siteLink ?? "https://github.com/SkyMazter"}>
-              <Button variant="outline-success me-2">Check It Out!</Button>
+            <Link
+              className="link-btn"
+              style={{ marginRight: "0.5rem" }}
+              to={siteLink ?? "https://github.com/SkyMazter"}
+            >
+              Visit Site <LinkIcon />
             </Link>
           ) : (
             <></>
           )}
-
-          {tags ? (
-            <div className="d-flex align-items-center py-3">
-              <p className="m-0 me-1 text-center">Tags:</p>
-              {tags?.length ? (
-                tags.map((tag, index) => (
-                  <Badge className="me-1" key={index} bg="info">
-                    {tag}
-                  </Badge>
-                ))
-              ) : (
-                <></>
-              )}
-            </div>
-          ) : (
-            <></>
-          )}
-        </Card.Body>
-      </Card>
-    </Col>
+          {githubLink ? <GHLogo link={githubLink} /> : <></>}
+        </footer>
+      </div>
+    </div>
   );
 };
 

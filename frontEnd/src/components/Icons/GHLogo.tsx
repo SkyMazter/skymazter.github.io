@@ -1,6 +1,9 @@
-const GHLogo = () => {
+interface Props {
+  link?: string;
+}
+const GHLogo = ({ link }: Props) => {
   const handleClick = (): void => {
-    window.location.href = "https://github.com/SkyMazter";
+    window.location.href = link ?? "https://github.com/SkyMazter";
   };
   return (
     <>

@@ -1,6 +1,6 @@
 const AboutMe = () => {
   return (
-    <article>
+    <article style={{marginBottom: "2rem"}}>
       <header>
         <h2 style={{ textDecoration: "underline" }}>About Me</h2>
       </header>

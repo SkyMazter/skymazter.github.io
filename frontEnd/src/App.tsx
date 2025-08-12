@@ -2,12 +2,14 @@ import TableBox from "./components/TableBox";
 import TableView from "./components/TableView";
 import GHLogo from "./components/Icons/GHLogo";
 import LNlogo from "./components/Icons/LNlogo";
+import Highlight from "./components/Highlight";
 
 import JSlogo from "./assets/JS-logo.svg";
 import TSlogo from "./assets/TS-logo.svg";
 import CPPlogo from "./assets/CPP-logo.svg";
 import PYlogo from "./assets/PY-logo.svg";
 import AboutMe from "./components/AboutMe";
+import CTLsite from "./assets/CTLsite-img.png";
 
 const App = () => {
   return (
@@ -22,13 +24,29 @@ const App = () => {
             <LNlogo />
             <GHLogo />
           </section>
+          <AboutMe />
           <TableView title="Tech Stack">
             <TableBox label="7 Years Experience" image={JSlogo}></TableBox>
             <TableBox label="3 Years Experience" image={TSlogo}></TableBox>
             <TableBox label="5 Years Experience" image={CPPlogo}></TableBox>
             <TableBox label="2 Years Experience" image={PYlogo}></TableBox>
           </TableView>
-          <AboutMe />
+          <TableView title="Highlighted Projects">
+            <Highlight
+              title={"Seen.it"}
+              description={
+                "This is a application made for the raspberry pi to serve as an archiving app. Allowing users to create accounts, upload, and download files. "
+              }
+              githubLink="https://www.google.com"
+            />
+            <Highlight
+              imgLink={CTLsite}
+              title={"CommunityTechLab.org"}
+              description="This is a website I built to showcase the work El Puente and CTNY has done when it comes to community technology and digital equity. Showcasing version history of Portable Network Kits, Our trained stewards, and examples of community owned networks throughout the United States."
+              siteLink="https://communitytechlab.org"
+              githubLink="https://github.com/Community-Tech-Lab/CTLab_Website"
+            />
+          </TableView>
         </section>
       </div>
       <div className="home-nav">
