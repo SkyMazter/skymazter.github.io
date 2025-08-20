@@ -3,6 +3,7 @@ import TableView from "./components/TableView";
 import GHLogo from "./components/Icons/GHLogo";
 import LNlogo from "./components/Icons/LNlogo";
 import Highlight from "./components/Highlight";
+import { Link } from "react-router-dom";
 
 import JSlogo from "./assets/JS-logo.svg";
 import TSlogo from "./assets/TS-logo.svg";
@@ -37,7 +38,7 @@ const App = () => {
               description={
                 "This is a application made for the raspberry pi to serve as an archiving app. Allowing users to create accounts, upload, and download files. "
               }
-              githubLink="https://www.google.com"
+              githubLink="https://github.com/SkyMazter/Seen_It"
             />
             <Highlight
               imgLink={CTLsite}
@@ -51,11 +52,18 @@ const App = () => {
       </div>
       <div className="home-nav">
         <ul>
-          <li>Projects</li>
-          <li>Work History</li>
-          <li>About Me</li>
-          <li>Technical Skills</li>
-          <li>Photography Portfolio</li>
+          <li>
+            <Link to={"/portfolio"}>Portfolio</Link>
+          </li>
+          {/*<li>
+            <Link to={""}>Work History</Link>
+          </li>*/}
+          <li>
+            <Link to={""}>About Me</Link>
+          </li>
+          <li>
+            <Link to={""}>Photography</Link>
+          </li>
         </ul>
       </div>
     </div>
