@@ -56,7 +56,7 @@ const Highlight = ({
           {siteLink ? (
             <Link
               className="link-btn"
-              style={{ marginRight: "0.5rem" }}
+              style={{ marginRight: "0.7rem" }}
               to={siteLink ?? "https://github.com/SkyMazter"}
             >
               Visit Site <LinkIcon />

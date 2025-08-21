@@ -52,16 +52,16 @@ const App = () => {
       </div>
       <div className="home-nav">
         <ul>
-          <li>
+          <li className="fade-up-element">
             <Link to={"/portfolio"}>Portfolio</Link>
           </li>
-          {/*<li>
-            <Link to={""}>Work History</Link>
-          </li>*/}
-          <li>
+          <li className="fade-up-element-1">
             <Link to={""}>About Me</Link>
           </li>
-          <li>
+          <li className="fade-up-element-2">
+            <Link to={""}>Work History</Link>
+          </li>
+          <li className="fade-up-element-3">
             <Link to={""}>Photography</Link>
           </li>
         </ul>

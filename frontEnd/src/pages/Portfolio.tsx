@@ -1,16 +1,21 @@
-// import Container from "react-bootstrap/Container";
-// import Row from "react-bootstrap/Row";
-// import Col from "react-bootstrap/Col";
-// import "../style/portfolio.css";
-// import BrowserNav from "../components/BrowserNav";
-//
 import Nav from "../components/Nav";
+import ProjectCard from "../components/ProjectCard";
 
 const Portfolio = () => {
   return (
     <>
-      <div className="container">
+      <div className="container portfolio">
         <Nav />
+        <section className="portfolio-projects">
+          <ProjectCard githubLink="https://www.google.com" />
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard githubLink="https://www.google.com" />
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+        </section>
       </div>
     </>
   );
