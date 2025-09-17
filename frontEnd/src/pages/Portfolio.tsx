@@ -7,12 +7,8 @@ const Portfolio = () => {
       <div className="container portfolio">
         <Nav />
         <section className="portfolio-projects">
-          <ProjectCard githubLink="https://www.google.com" />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard githubLink="https://www.google.com" />
-          <ProjectCard />
+          <ProjectCard tags={["Foo", "Bar"]} githubLink="https://www.google.com" />
+          <ProjectCard tags={["Zip", "Zap"]} />
           <ProjectCard />
           <ProjectCard />
         </section>

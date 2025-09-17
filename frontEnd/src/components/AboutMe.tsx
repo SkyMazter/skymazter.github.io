@@ -9,7 +9,7 @@ const AboutMe = () => {
           I’m a Full Stack Software Engineer proficient in C++,
           JavaScript/TypeScript, and Swift/UIKit, with experience in both UI
           design and backend development for web and iOS applications. Since
-          beginning my coding journey in 2017, I earned a B.S. in Computer
+          beginning my coding journey in 2017, I earned a B.A. in Computer
           Science in June 2024 and am currently seeking post-graduate internship
           or career opportunities to grow my portfolio. I’ve contributed to
           server and network configurations, including the deployment of
