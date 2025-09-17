@@ -246,12 +246,14 @@ li > *:hover {
     color: var(--primary);
     background-color: white;
     border: solid 1px var(--primary);
+    transition: ease-in-out 0.15s;
     
 }
 
 .tag:hover{
     background-color: var(--primary);
     color: white;
+    
 }
 
 .typewriter {
