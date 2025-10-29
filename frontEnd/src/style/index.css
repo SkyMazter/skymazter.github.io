@@ -203,12 +203,19 @@ li > *:hover {
     text-decoration: underline;
 }
 
+.portfolio {
+    height: 100vh;
+    overflow: hidden;
+}
+
 .portfolio-projects {
     display: flex;
     flex-flow: row wrap;
     justify-content: start;
-    overflow-y: scroll;
+    overflow: scroll;
     width: 100%;
+    height: 100%;
+    padding-bottom: 20vh;
 }
 
 .proj-card {
@@ -245,15 +252,6 @@ li > *:hover {
 }
 /*Mobile view*/
 @media only screen and (max-width: 767px) {
-    /*.typewriter {
-        width: 100%;
-        font-size: 30px;
-    }
-
-    .subheading {
-        font-size: 12px;
-    }*/
-
     .portfolio {
         width: 100vw;
         overflow-x: hidden;
