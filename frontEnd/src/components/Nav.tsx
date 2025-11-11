@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Nav = () => {
   return (
     <>
-      <nav className="Nav fade-up-element">
+      <nav className="nav fade-up-element">
         <Link to={"/"}>Home</Link>
         <Link to={"/portfolio"}>Portfolio</Link>
         <Link to={""}>Work History</Link>

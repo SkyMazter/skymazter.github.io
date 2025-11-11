@@ -1,3 +1,4 @@
+import MobileNav from "../components/MobileNav";
 import Nav from "../components/Nav";
 import ProjectCard from "../components/ProjectCard";
 
@@ -6,6 +7,7 @@ const Portfolio = () => {
     <>
       <div className="container portfolio">
         <Nav />
+        <MobileNav/>
         <section className="portfolio-projects">
           <ProjectCard
             tags={["Foo", "Bar"]}
