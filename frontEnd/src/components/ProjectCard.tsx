@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
 import placeholder from "../assets/Placeholder.png";
 import GHLogo from "./Icons/GHLogo";
+import LinkIcon from "./Icons/LinkIcon";
 import Tag from "./Tag";
 
 interface Props {
@@ -26,10 +28,27 @@ const ProjectCard = ({
         <h2>{title ?? "Project Name"}</h2>
         {githubLink ? <GHLogo link={githubLink} /> : <></>}
       </header>
-      <div> {tags?.map( (tag, key)=> (<Tag key={key} text={tag}/>))}</div>
+      <div>
+        {" "}
+        {tags?.map((tag, key) => (
+          <Tag key={key} text={tag} />
+        ))}
+      </div>
       <article>
         <p> {description ?? "Project Description Missing"}</p>
       </article>
+      {/* <button className="link-btn" >
+        Visit Site
+        <LinkIcon/>
+      </button> */}
+
+      {siteLink ? (
+        <Link to={siteLink} className="link-btn">
+          Visit Site <LinkIcon />{" "}
+        </Link>
+      ) : (
+        <></>
+      )}
     </div>
   );
 };

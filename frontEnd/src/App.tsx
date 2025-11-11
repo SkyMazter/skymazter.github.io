@@ -14,7 +14,7 @@ import CTLsite from "./assets/CTLsite-img.png";
 
 const App = () => {
   return (
-    <div className="container home">
+    <div className="container-fluid home">
       <div className="home-main">
         <section>
           <header className="home-name">

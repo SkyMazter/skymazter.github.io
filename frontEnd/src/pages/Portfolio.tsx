@@ -9,7 +9,7 @@ const Portfolio = () => {
         <section className="portfolio-projects">
           <ProjectCard tags={["Foo", "Bar"]} githubLink="https://www.google.com" />
           <ProjectCard tags={["Zip", "Zap"]} />
-          <ProjectCard />
+          <ProjectCard siteLink="https://www.google.com"/>
           <ProjectCard />
         </section>
       </div>
