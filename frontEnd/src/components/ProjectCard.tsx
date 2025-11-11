@@ -34,13 +34,9 @@ const ProjectCard = ({
           <Tag key={key} text={tag} />
         ))}
       </div>
-      <article>
+      <div>
         <p> {description ?? "Project Description Missing"}</p>
-      </article>
-      {/* <button className="link-btn" >
-        Visit Site
-        <LinkIcon/>
-      </button> */}
+      </div>
 
       {siteLink ? (
         <Link to={siteLink} className="link-btn">

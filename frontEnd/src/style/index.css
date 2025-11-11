@@ -229,7 +229,11 @@ li > *:hover {
 .proj-card {
   flex: 0 1 calc(33.3333% - 1%);
   margin-right: 1%;
+  margin-bottom: 1rem;
   width: 30%;
+  overflow-wrap: break-word;
+  height: max-content;
+  overflow-y: visible;
 }
 
 .proj-card > img {
