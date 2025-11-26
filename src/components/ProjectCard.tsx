@@ -5,7 +5,7 @@ import LinkIcon from "./Icons/LinkIcon";
 import Tag from "./Tag";
 
 interface Props {
-  title?: string | null;
+  title?: string;
   description?: string;
   siteLink?: string;
   tags?: string[];
