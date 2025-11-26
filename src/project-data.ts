@@ -10,12 +10,15 @@ const projectData: Project[] = [
     networks throughout the United States.`,
     siteLink: "https://communitytechlab.org",
     githubLink: "https://github.com/Community-Tech-Lab/CTLab_Website",
+    tags:["React", "Typescript"]
   },
   {
     title: "Seen.it",
     description: `This is a application made for the raspberry pi to serve as an archiving app. 
       Allowing users to create accounts, upload, and download files. `,
     imgLink: SeenIT,
+    tags: ["Docker", "React", "Typescript"],
+    githubLink: "https://github.com/SkyMazter/Seen_It",
   },
 ];
 export default projectData;

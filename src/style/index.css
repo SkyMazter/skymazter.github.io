@@ -253,6 +253,7 @@ li > *:hover {
 .proj-card > img {
   margin-bottom: 1rem;
   width: 100%;
+  box-shadow: 1px 1px 2px rgb(212, 190, 190);
 }
 
 .proj-card > header {
