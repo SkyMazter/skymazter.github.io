@@ -11,6 +11,7 @@ import CPPlogo from "./assets/CPP-logo.svg";
 import PYlogo from "./assets/PY-logo.svg";
 import AboutMe from "./components/AboutMe";
 import CTLsite from "./assets/CTLsite-img.png";
+import SeenIT from "./assets/SeenIT.png";
 
 const App = () => {
   return (
@@ -39,6 +40,7 @@ const App = () => {
                 "This is a application made for the raspberry pi to serve as an archiving app. Allowing users to create accounts, upload, and download files. "
               }
               githubLink="https://github.com/SkyMazter/Seen_It"
+              imgLink={SeenIT}
             />
             <Highlight
               imgLink={CTLsite}
