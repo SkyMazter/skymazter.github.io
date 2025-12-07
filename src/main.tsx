@@ -8,6 +8,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./style/index.css";
 
 import Portfolio from "./pages/Portfolio.tsx";
+import About from "./pages/About.tsx";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
   {
     path: "/portfolio",
     element: <Portfolio />,
+  },
+  {
+    path: "/about",
+    element: <About />,
   },
 ]);
 
