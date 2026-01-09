@@ -29,8 +29,8 @@ const App = () => {
           <AboutMe />
           <TableView title="Tech Stack">
             <TableBox label="7 Years Experience" image={JSlogo}></TableBox>
-            <TableBox label="3 Years Experience" image={TSlogo}></TableBox>
-            <TableBox label="5 Years Experience" image={CPPlogo}></TableBox>
+            <TableBox label="4 Years Experience" image={TSlogo}></TableBox>
+            <TableBox label="6 Years Experience" image={CPPlogo}></TableBox>
             <TableBox label="2 Years Experience" image={PYlogo}></TableBox>
           </TableView>
           <TableView title="Highlighted Projects">

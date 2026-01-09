@@ -4,6 +4,16 @@ import PNK from "./assets/pnkimage1.png";
 
 const projectData: Project[] = [
   {
+    title: "P.A.L.M",
+    description: `
+    P.A.L.M aims to be a platform for locally hosted community Ai models. 
+    Utitizing open source technology to create a replicable model that can be hosted on community networks. 
+    With the use of Retrieval-Augmented Generation created using Langchain and Ollama, commuities can host a local model that can generate responses based on community submitted information hosted on Local Networks. 
+     `,
+    tags: ["React", "Typescript", "LangChain", "AI", "Tailwind"],
+    githubLink: "https://github.com/SkyMazter/PNK_RAG_AI_Agent",
+  },
+  {
     title: "CommnuityTechLab.org",
     imgLink: CTLsite,
     description: `This is a website I built to showcase the work El Puente and CTNY has done when it comes to community technology 
@@ -18,7 +28,7 @@ const projectData: Project[] = [
     description: `This is a application made for the raspberry pi to serve as an archiving app. 
       Allowing users to create accounts, upload, and download files. `,
     imgLink: SeenIT,
-    tags: ["Docker", "React", "Typescript"],
+    tags: ["Docker", "React", "Typescript", "Bootstrap"],
     githubLink: "https://github.com/SkyMazter/Seen_It",
   },
   {
@@ -32,6 +42,22 @@ const projectData: Project[] = [
     `,
     tags: ["Linux", "Raspberry Pi"],
     imgLink: PNK,
+  },
+  {
+    title: "BarSpot",
+    description: `
+    Capstone project meant to help people plan out their nights before a night of responsible drinking. 
+     `,
+    tags: ["React", "Typescript", "Bootstrap"],
+    githubLink: "https://github.com/Bar-Spot-Capstone/bar-spot",
+  },
+  {
+    title: "NYC Bathroom Tracker",
+    githubLink: "https://github.com/SkyMazter/Bathroom-Tracker",
+    description: `
+    This is a web app meant to help people create and manage their own repository of available bathrooms in the city for then they are on the go. Using the Google Maps api to provide directions in conjunction with NYC Open Data for any notable public locations. 
+    `,
+    tags: ["Typescript", "React"],
   },
 ];
 export default projectData;
