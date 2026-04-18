@@ -3,10 +3,10 @@ import Nav from "../components/Nav";
 
 const About = () => {
   return (
-    <>
+    <div className="container">
       <MobileNav />
       <Nav />
-    </>
+    </div>
   );
 };
 

@@ -58,7 +58,7 @@ const App = () => {
             <Link to={"/portfolio"}>Portfolio</Link>
           </li>
           <li className="fade-up-element-1">
-            <Link to={""}>About Me</Link>
+            <Link to={"/about"}>About Me</Link>
           </li>
           <li className="fade-up-element-2">
             <Link to={""}>Work History</Link>

@@ -24,3 +24,8 @@ dist-ssr
 *.sw?
 node_modules
 package-lock.json
+
+#Unused Components
+src/components/BrowserNav.tsx
+src/components/ContactMe.tsx
+src/components/P5Background.tsx
