@@ -1,17 +1,20 @@
 import CTLsite from "./assets/CTLsite-img.png";
 import SeenIT from "./assets/SeenIT.png";
 import PNK from "./assets/pnkimage1.png";
+import PNKv3 from "./assets/PNKv3.png";
 
 const projectData: Project[] = [
   {
-    title: "P.A.L.M",
+    title: "PNK Config (PNKv4)",
+    imgLink: PNK,
     description: `
-    P.A.L.M aims to be a platform for locally hosted community Ai models. 
-    Utitizing open source technology to create a replicable model that can be hosted on community networks. 
-    With the use of Retrieval-Augmented Generation created using Langchain and Ollama, commuities can host a local model that can generate responses based on community submitted information hosted on Local Networks. 
+    This program serves as an installer for the server program that runs a Portable Network Kit (PNK). 
+    Allowing for a web server to be created through a series of prompts meant to tailor it to the user's preference. 
+
      `,
-    tags: ["React", "Typescript", "LangChain", "AI", "Tailwind"],
-    githubLink: "https://github.com/SkyMazter/PNK_RAG_AI_Agent",
+    tags: ["Rust", "Bash", "Raspberry Pi", "Linux"],
+    githubLink:
+      "https://github.com/Community-Tech-Lab/Portable-Network-Kit-Config",
   },
   {
     title: "CommnuityTechLab.org",
@@ -41,7 +44,7 @@ const projectData: Project[] = [
     Once configured, the system operates independently, facilitating seamless communication and collaboration within a self-contained network. 
     `,
     tags: ["Linux", "Raspberry Pi"],
-    imgLink: PNK,
+    imgLink: PNKv3,
   },
   {
     title: "BarSpot",
